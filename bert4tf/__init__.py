@@ -16,3 +16,4 @@
 from . import modeling
 from . import tokenization
 from . import optimization
+from . import extract_features
