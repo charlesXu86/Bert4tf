@@ -10,7 +10,7 @@ from setuptools import setup
 
 setup(
     name="bert4tf",
-    version="1.0.0",
+    version="1.0.1",
     keywords=("bert4tf", "tensorflow"),
     description="bert for tensorflow",
     long_description="...",
@@ -29,3 +29,4 @@ setup(
             'Programming Language :: Python :: 3.6'
         ]
 )
+print("Welcome to Bert4TF")
