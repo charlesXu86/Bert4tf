@@ -24,10 +24,10 @@ import json
 import re
 import sys
 
-sys.path.append("..")
+# sys.path.append("./")
 
-import modeling
-import tokenization
+from bert4tf import modeling
+from bert4tf import tokenization
 import tensorflow as tf
 
 from enum import Enum

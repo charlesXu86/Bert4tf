@@ -10,7 +10,7 @@ from setuptools import setup
 
 setup(
     name="bert4tf",
-    version="1.0.1",
+    version="1.0.3",
     keywords=("bert4tf", "tensorflow"),
     description="bert for tensorflow",
     long_description="...",
