@@ -6,7 +6,15 @@
 @time: 2019/05/23
 """
 
-from setuptools import setup
+from setuptools import setup, find_packages, convert_path
+
+def _version():
+    ns = {}
+    with open(convert_path("bert4tf/version.py"), "r") as fh:
+        exec(fh.read(), ns)
+    return ns['__version__']
+
+__version = _version()
 
 setup(
     name="bert4tf",

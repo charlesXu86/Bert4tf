@@ -105,7 +105,7 @@ class BertConfig(object):
 
 class BertModel(object):
     """BERT_as_service model ("Bidirectional Embedding Representations from a Transformer").
-
+    初始化
     Example usage:
 
     ```python
@@ -533,6 +533,7 @@ def create_attention_mask_from_input_mask(from_tensor, to_mask):
     Returns:
       float Tensor of shape [batch_size, from_seq_length, to_seq_length].
     """
+    # 确保输入的tensor是2D或是3D
     from_shape = get_shape_list(from_tensor, expected_rank=[2, 3])
     batch_size = from_shape[0]
     from_seq_length = from_shape[1]
