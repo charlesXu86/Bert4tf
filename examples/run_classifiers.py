@@ -30,8 +30,6 @@ from bert4tf.loader_bert import StockBertConfig, map_stock_config_to_params, loa
 if tf.__version__.startswith('1.'):
     tf.enable_eager_execution = True
 
-
-
 # Load all files from a directory in a DataFrame.
 def load_directory_data(directory):
     data = {}

@@ -16,21 +16,24 @@ def _version():
 
 __version = _version()
 
+with open("README.rst", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name="bert4tf",
-    version="1.0.3",
-    keywords=("bert4tf", "tensorflow"),
-    description="bert for tensorflow",
-    long_description="...",
+    version=__version,
+    keywords=("bert4tf", "tensorflow2"),
+    description="bert for tensorflow2",
+    long_description="text/x-rst",
     license="MIT Licence",
-    url="https://github.com/charlesXu86/Time_Convert",
+    url="https://github.com/charlesXu86/Bert4tf",
     author="xu",
     author_email="charlesxu86@163.com",
     packages={'bert4tf': 'bert4tf'},
-    package_data={},
+    package_data={"": ["*.txt", "*.rst"]},
     include_package_data=True,
     platforms="any",
-    install_requires=['tensorflow_gpu==1.14.0'],
+    install_requires=['tensorflow'],
     zip_safe=False,
     classifiers=[
             'Programming Language :: Python :: 3.7',

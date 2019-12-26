@@ -18,9 +18,8 @@ from __future__ import division, absolute_import, print_function
 from .version import __version__
 
 from . import modeling
-from . import tokenization
 from . import optimization
-from . import extract_features
+# from . import extract_features
 
 from .layer import Layer
 
